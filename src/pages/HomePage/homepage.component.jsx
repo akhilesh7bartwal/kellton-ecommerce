@@ -8,12 +8,12 @@ class HomePage extends React.Component {
         this.state={
             sections: [
                 {
-                title: 'hats',
+                title: 'HATS',
                 imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
                 id: 1
                 },
                 {
-                title: 'jackets',
+                title: 'JACKETS',
                 imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
                 id: 2
                 },
