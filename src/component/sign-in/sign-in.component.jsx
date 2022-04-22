@@ -13,6 +13,7 @@ constructor(){
 handleChange = (event)=>{
     const {name}=event.target
     console.log(`${name} => {value}`)
+   // this.setState({[name]:value})
 }
 
     render(){

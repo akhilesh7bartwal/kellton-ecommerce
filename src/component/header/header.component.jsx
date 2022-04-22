@@ -14,7 +14,7 @@ const Header= () =>{
                     <Logo className='logo'/>
                 </Link>
                 
-                <div className='option'>
+                <div className='options'>
                     <Link
                         className='option'
                         to='/shop'>
