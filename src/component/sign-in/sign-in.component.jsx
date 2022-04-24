@@ -1,3 +1,5 @@
+import FormInput from '../form-input/form-input.component'
+
 import './sign-in.style.scss'
 import React from 'react'
 
@@ -11,9 +13,9 @@ constructor(){
 }
 
 handleChange = (event)=>{
-    const {name}=event.target
-    console.log(`${name} => {value}`)
-   // this.setState({[name]:value})
+    const {name,value}=event.target
+    //console.log(`${name} => {value}`)
+    this.setState({[name]:value})
 }
 
     render(){
@@ -25,19 +27,19 @@ handleChange = (event)=>{
                         Sign in with your email and password
                     </span>
                     <form>
-                        <input 
+                        <FormInput 
                             name='email'
                             placeholder='email'
                             type='email'
                             onChange={this.handleChange}
                         />
-                        <input 
+                        <FormInput 
                             name='password'
                             placeholder='password'
                             type='password'
                             onChange={this.handleChange}
                         />
-                        <input 
+                        <FormInput 
                             type='submit'
                             value='submit Form'
                             />
