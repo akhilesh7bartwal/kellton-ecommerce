@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './menu-item.style.scss'
 const MenuItem= ({menu}) => {
     return (
@@ -11,8 +12,10 @@ const MenuItem= ({menu}) => {
                         }
                     />
                     <div className='content'>
-                        <div className='title'>{menu.title.toUpperCase()}</div>
-                        <div className='subtitle'>SHOP NOW</div>
+                        <Link to={`/category/${menu.title}`}>
+                            <div className='title'>{menu.title.toUpperCase()}</div>
+                            <div className='subtitle'>SHOP NOW</div>
+                        </Link>
                     </div>
                 </div>
 

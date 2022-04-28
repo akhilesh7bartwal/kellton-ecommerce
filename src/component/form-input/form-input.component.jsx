@@ -1,17 +1,14 @@
 import './form-input.style.scss'
 
-const FormInput = ({name, placeholder,type, handleChange, value}) =>{
+const FormInput = ({handleChange, ...otherProps}) =>{
     return (
-        <>
-            <input
-                name={name}
-                placeholder={placeholder}
-                type={type}
-                onChange={handleChange}
-                value={value ? value : ""}
-                
+        <div className='group'>
+             <input
+            {...otherProps}
+            onChange={handleChange}
+            className='form-input'                             
             />
-        </>
+        </div>      
     )
 }
 export default FormInput

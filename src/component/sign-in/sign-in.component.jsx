@@ -2,6 +2,9 @@ import FormInput from '../form-input/form-input.component'
 
 import './sign-in.style.scss'
 import React from 'react'
+import CustomButton from '../custom-button/custom-button.component'
+
+import firebase from 'firebase'
 
 class SignIn extends React.Component{
 constructor(){
@@ -18,7 +21,7 @@ handleChange = (event)=>{
     this.setState({[name]:value})
 }
 
-    render(){
+  render(){
         return(
             <>
                 <div className='sign-in'>
@@ -39,10 +42,10 @@ handleChange = (event)=>{
                             type='password'
                             onChange={this.handleChange}
                         />
-                        <FormInput 
-                            type='submit'
-                            value='submit Form'
-                            />
+                        <CustomButton
+                            type='submit'>
+                            Sign in
+                        </CustomButton>
                     </form>
                 </div>
             </>
